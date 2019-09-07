@@ -78,5 +78,25 @@
     border: 2px solid #ffffff;
     margin:5px;
     border-radius: 5px;
-    
+
 }
+
+.app-layout {
+    display: grid; /* 1 */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 2 */
+    grid-template-rows: 100vh; /* 3 */
+    }
+    
+    .tweets{
+        background-color: brown;
+    }
+    .replies{
+        background-color: blueviolet;
+    }
+    .search{
+        background-color: darkcyan;
+    }
+    .messages{
+
+        background-color: darkgreen;
+    }

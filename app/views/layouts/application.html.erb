@@ -20,9 +20,9 @@
                      <ul>
                         
                         <li><%= link_to "Home", root_path %></li>
-                        <li><%= link_to "Home", welcome_page_about_path %></li>
-                        <li class="log"><a href="#">Login</a></li>
-                        <li class="sign"><a href="#">sign up</a></li>
+                        <li><%= link_to "About", welcome_page_about_path %></li>
+                        <li><%= link_to "Log in", new_user_session_path %></li>
+                        <li><%= link_to "sign up", new_user_registration_path %></li>
                      </ul>
                   </div>
               </div>
@@ -31,6 +31,8 @@
      </div>
 
      <div class="container">
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
             <%= yield %>
       </div>
 
